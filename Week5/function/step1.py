@@ -4,10 +4,11 @@ for x in range(3):
     numlist.append(number)
     
 
-def max_min():
-    max_value = max(numlist)
-    print("Max Value: ",max_value)
-    min_value = min(numlist)
-    print("Min Value: ",min_value)
+def maxNum():
+    return max(numlist)
+    
+def minNum():
+    return min(numlist)
 
-max_min()
+print("Max Value: ",maxNum())
+print("Min Value: ",minNum())
