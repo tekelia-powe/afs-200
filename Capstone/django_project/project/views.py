@@ -33,7 +33,7 @@ def add_contact(request):
 @csrf_exempt
 def delete_contact(request, id):
     Contact.objects.get(id=id).delete()
-    return HttpResponseRedirect("/")
+    return redirect('contacts')
 
 def register(request):
 
