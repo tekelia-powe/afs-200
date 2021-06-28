@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<div class="form_contatiner">
+<h2>Pyhone Book</h2>
+{% if user.is_authenticated %}
+<p>Sorry {{user.first_name}} <br> Search feature has not been activated yet. Check back soon! </p>
+
+{%else%}
+<p>Welcome to my Python Phonebook App. </p>
+<p>Feature not available <br> Please register and/or login in order to gain full access to the app. 
+    
+{%endif%}
+</div>
+{% endblock%}
